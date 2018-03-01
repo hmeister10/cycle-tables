@@ -1,0 +1,23 @@
+.text-center {
+  text-align: center;
+}
+
+.flex-valing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mdl-list__item a {
+  width: 100%;
+  text-align: center;
+}
+
+.mdl-layout__header-row {
+  padding: 0 16px 0 20px;
+}
+
+.mdl-cell--12-col,
+.mdl-cell--12-col-phone.mdl-cell--12-col-phone {
+  width: calc(100vw - 16px);
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#f0db4f">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" sizes="192x192" href="img/launcher-icon-192.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="img/launcher-icon-128.png">
+  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="img/launcher-icon-128.png">
+
+  <!--iOS fallback -->
+  <meta name="application-name" content="Bat">
+  <meta name="apple-mobile-web-app-title" content="Bat">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--Windows fallback-->
+  <meta name="msapplication-navbutton-color" content="#f0db4f">
+  <meta name="msapplication-starturl" content="/">
+
+  <link rel="stylesheet" type="text/css" href="vendor/mdl/material.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="vendor/mdl/material-icons.css">
+</head>
+
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Bat</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+
+      <div class="mdl-tabs mdl-js-tabs">
+        <div class="mdl-tabs__tab-bar">
+          <a href="#status" class="mdl-tabs__tab is-active">Status</a>
+          <a href="#about" class="mdl-tabs__tab">About</a>
+        </div>
+        <div class="mdl-tabs__panel is-active" id="status">
+          <div class="mdl-grid">
+            <div class="mdl-cell--12-col flex-valing">
+              <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                <tbody>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">
+                      Level
+                    </td>
+                    <td class="mdl-data-table__cell--non-numeric">
+                      <span id="level"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">
+                      Calories
+                    </td>
+                    <td class="mdl-data-table__cell--non-numeric">
+                      <span id="charging"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">
+                      Charging time
+                    </td>
+                    <td class="mdl-data-table__cell--non-numeric">
+                      <span id="charging-time"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">
+                      Discharging time
+                    </td>
+                    <td class="mdl-data-table__cell--non-numeric">
+                      <span id="discharging-time"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-tabs__panel" id="about">
+          <div class="mdl-grid">
+            <div class="mdl-cell--12-col text-center">
+              
+            </div>
+            <div class="mdl-cell--12-col text-center">
+              <h4>Enter your details</h4>
+            </div>
+            <div class="mdl-cell--12-col">
+              <ul class="mdl-list list-width">
+                <li class="mdl-list__item">
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="vendor/mdl/material.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/battery.js"></script>
+
+</body>
+
+<!-- 
+  Built over the initial work by 
+  
+  Dídac Sabatés - Full Stack Developer - https://github.com/sabatesduran/battery-status-pwa"
+-->
+
+</html>
